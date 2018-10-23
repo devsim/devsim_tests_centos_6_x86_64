@@ -54,7 +54,7 @@ set -e
 progname="\$0"
 curdir=\`dirname "\${progname}"\`
 ANACONDA_PATH=${ANACONDA_PATH}
-export DYLD_LIBRARY_PATH=\${ANACONDA_PATH}/lib
+export LD_LIBRARY_PATH=\${ANACONDA_PATH}/lib
 export TCL_LIBRARY=\${ANACONDA_PATH}/lib/tcl8.6
 # sequential speeds up small examples
 export MKL_NUM_THREADS=1
