@@ -66,6 +66,6 @@ ln -sf ${TAGDIR}/testing .
 ln -sf ${TAGDIR}/examples .
 
 rm -rf run && mkdir run
-(cd run && ../bin/cmake -DDEVSIM_TEST_GOLDENDIR=${BASEDIR}/goldenresults -DDEVSIM_PY_TEST_EXE=${BASEDIR}/bin/devsim_py27 -DDEVSIM_PY3_TEST_EXE=${BASEDIR}/bin/devsim_py37 -DDEVSIM_TCL_TEST_EXE=${BASEDIR}/bin/devsim_tcl ..)
+(cd run && ../bin/cmake -DDEVSIM_TEST_GOLDENDIR=${BASEDIR}/goldenresults -DDEVSIM_PY2_TEST_EXE=${BASEDIR}/bin/devsim_py27 -DDEVSIM_PY3_TEST_EXE=${BASEDIR}/bin/devsim_py37 -DDEVSIM_TCL_TEST_EXE=${BASEDIR}/bin/devsim_tcl ..)
 (cd run && ../bin/ctest -j4)
 
